@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+20.times do |n|
+  title = "テスト#{n + 1}"
+  content = "コンテンツ#{n + 1}"
+  Poem.create!(title: title,
+               content: content
+               )
+end
